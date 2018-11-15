@@ -11,19 +11,12 @@ class ComposerStaticInit15dca3894faf430f52af80b0e4cd2dbf
     );
 
     public static $prefixLengthsPsr4 = array (
-        'T' => 
-        array (
-            'Tuupola\\Middleware\\' => 19,
-            'Tuupola\\Http\\Factory\\' => 21,
-        ),
         'S' => 
         array (
             'Slim\\' => 5,
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
-            'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
@@ -33,38 +26,18 @@ class ComposerStaticInit15dca3894faf430f52af80b0e4cd2dbf
         ),
         'F' => 
         array (
-            'Firebase\\JWT\\' => 13,
             'FastRoute\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Tuupola\\Middleware\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/tuupola/callable-handler/src',
-            1 => __DIR__ . '/..' . '/tuupola/slim-jwt-auth/src',
-        ),
-        'Tuupola\\Http\\Factory\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/tuupola/http-factory/src',
-        ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
         ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
-        'Psr\\Http\\Server\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
-            1 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
-        ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -73,10 +46,6 @@ class ComposerStaticInit15dca3894faf430f52af80b0e4cd2dbf
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
-        ),
-        'Firebase\\JWT\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'FastRoute\\' => 
         array (

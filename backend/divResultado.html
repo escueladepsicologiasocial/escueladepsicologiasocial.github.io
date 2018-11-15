@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!--script src="/js/funciones.js"></script-->   
+        <style>
+            tbody.collapse.in {
+                        display: table-row-group;}
+            
+        </style>
+        <script>
+            function modals(id){
+            
+            $("#myModal"+id).modal('show');
+            console.log("click"+id);
+            }
+        </script>
+
+
+    
+    <div class="row">
+        <div class="col-md-10">
+            <span>alumno</span>
+            <table class="table table-responsive table-hover" border=2>
+                <thead>
+                    <tr id="miTablaPersonalizada">
+                        <th colspan="1" >*</th>											
+                        <th scope="col">#</th>												
+                        <th scope="col">ID</th>
+                        <th scope="col">DNI</th>
+                        <th scope="col" >NOMBRE</th>
+                        <th scope="col">APELLIDO</th>
+                        <th scope="col">SEXO</th>
+                        <th scope="col">LEGAJO</th>
+                        <th scope="col">ID CARRERA</th>
+                        <th scope="col">FECHA DE INSCRIPCION</th>
+                        <th scope="col">MODALIDAD</th>
+                        <th scope="col">TURNO</th>
+                        <th scope="col">AÑO CARRERA</th>
+                        <th scope="col">ACTIVO</th>
+                        <th scope="col">FECHA DE NACIMIENTO</th>
+                        <th scope="col">DIRECCION</th>
+                        <th scope="col">TEL</th>
+                        <th scope="col">CELULAR</th>
+                        <th scope="col">EST CIVIL</th>
+                        <th scope="col">SECUNDARIO</th>												
+                        <th scope="col">EMAIL</th>
+                        <th scope="col">FACEBOOK</th>
+                        <th scope="col">TRABAJO</th>
+                        <th scope="col">ID DOCUMENTACION</th>
+                        <th scope="col">ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable" onclick="modals(1)"  >
+                        <td class="field-label col-md-3 active">
+                            <p>
+                                <span >+</span>
+                            </p>
+                        </td>
+                        <td >1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Serene</td>
+                        <td>Igonet</td>
+                        <td>F</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2017-08-28</td>
+                        <td>P</td>
+                        <td>m</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1932-02-15</td>
+                        <td>60 Dunning Crossing</td>
+                        <td>(830) 9096281</td>
+                        <td>+7 202 904 0177</td>
+                        <td>separado</td>
+                        <td>tecnico</td>
+                        <td>sigonet0@japanpost.jp</td>
+                        <td>Serene Igonet</td>
+                        <td>Brightdog</td>
+                        <td>1</td>
+                        <td>
+                            <div class='btn-group' role='group' aria-label='Basic example'>
+                                <button type='button' class='btn btn-warning'>MODIFICAR</button>
+                                <button type='button' class='btn btn-danger'>ELIMINAR</button>                                                        
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <div id="myModal1" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Encabezado...</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Cuerpo...</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+            </table>
+        </div>
+        <div class="col-md-2 container">
+            <button class="btn btn-default">Text</button>
+        </div>
+    </div>
+</body>
+</html>
+
